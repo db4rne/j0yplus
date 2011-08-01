@@ -2,12 +2,12 @@
 
 # Default values
 OUT           ?= image
-MCU_TARGET    ?= atmega88
-MCU_FTARGET   ?= m88
+MCU_TARGET    ?= atmega88p
+MCU_FTARGET   ?= m88p
 MCU_CC        ?= avr-gcc
 OPTIMIZE      ?= -Os
 WARNINGS      ?= -Wall
-DEFS          ?= -DF_CPU=16000000
+DEFS          ?= -DF_CPU=8000000
 CFLAGS        += -MMD -g -mmcu=$(MCU_TARGET) $(OPTIMIZE) $(WARNINGS) $(DEFS)
 ASFLAGS       ?=  
 ASFLAGS       += -g $(DEFS) 
