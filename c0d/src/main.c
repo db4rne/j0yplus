@@ -18,12 +18,12 @@ void wait(int mt){
 
 int main (void)
 {	
-	DDRC = 0xFF; 	//Port C all outputs
+	DDRB = 0xFF; 	//Port C all outputs
 	
 	while(1) {
-		PORTC = 0b00000000;
+		PORTB = 0b00000000;
 		wait(5);
-		PORTC = 0x11;
+		PORTB = 0xC0;
 		wait(5);
 	}
 	
